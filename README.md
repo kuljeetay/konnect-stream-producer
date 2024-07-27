@@ -37,3 +37,12 @@ These can be adjusted as needed.
 ## Running the Application
 
 After starting the services with Docker Compose, the *konnect-stream-producer* container will come up and start producing events from the specified JSONL File. Application logs can be seen using docker logs -f konnect-stream-producer container
+
+## Note
+
+This code comes up in existing docker network in which consumer has been already brought up. Do not rename consumer folder after cloning it or else please make sure to adjust the network name in docker-compose file is already pointing to the one that is existing.
+
+Check Existing Networks using below command: 
+```sh
+docker network ls
+```
