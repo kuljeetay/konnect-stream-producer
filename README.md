@@ -36,4 +36,4 @@ These can be adjusted as needed.
 
 ## Running the Application
 
-After starting the services with Docker Compose, the *konnect-stream-producer* container will come up and start producing events from the specified Events. Application logs can be seen using docker logs -f konnect-stream-producer container
+After starting the services with Docker Compose, the *konnect-stream-producer* container will come up and start producing events from the specified JSONL File. Application logs can be seen using docker logs -f konnect-stream-producer container
