@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  konnect-stream-producer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      KAFKA_HOST: kafka:29092
+    networks:
+      - konnect-stream-processor_default
+
+networks:
+  konnect-stream-processor_default:
+    external: true
+  
